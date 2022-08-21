@@ -1,0 +1,175 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gainsboro;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 4px 5px rgb(162, 162, 162);
+    padding: 0 8%;
+}
+
+nav li{
+    float: right;
+}
+
+nav li a{
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active){
+    background-color: blue;
+    color: white;
+}
+
+/* nav li a.active{
+    background-color: #4CAF50;
+    color: white;
+} */
+
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 4%;
+    margin-right: 8%;
+    flex-direction: row;
+    z-index: 2;
+    position: relative;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px rgb(162, 162, 162);
+}
+
+.profile img{
+    margin-left: 50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.profile .bio{
+    padding: 0px 20px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.profile .bio h1{
+    font-size: 1.8em;
+}
+
+.profile .bio h3{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: grey;
+}
+
+.contact{
+    background-color: blue; 
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.contact:hover{
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+    padding: 13px 30px;
+}
+
+.resume{
+    background-color: white; 
+    margin-top: 20px;
+    margin-right: 10px;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    padding: 12px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.resume:hover{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+}
+
+.desc table{
+    border-collapse: separate;
+    border-spacing: 75px 0;
+}
+
+.desc td{
+    padding: 5px;
+}
+
+.form{
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 4%;
+    margin-right: 8%;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 2px 4px 10px rgb(162, 162, 162);
+    padding: 20px;
+}
+
+.form label{
+    font-weight: bold;
+}
+
+.form input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 20px;
+    cursor: pointer;
+}
