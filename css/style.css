@@ -57,13 +57,13 @@ nav li a:hover:not(.active){
     flex-direction: row;
     z-index: 2;
     position: relative;
-    height: 250px;
+    height: auto;
     border-radius: 5px;
     box-shadow: 2px 4px 10px rgb(162, 162, 162);
 }
 
 .profile img{
-    margin-left: 50px;
+    margin: 50px;
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -73,6 +73,8 @@ nav li a:hover:not(.active){
     padding: 0px 20px;
     margin-left: 20px;
     margin-right: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .profile .bio h1{
