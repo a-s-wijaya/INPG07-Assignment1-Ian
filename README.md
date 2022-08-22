@@ -1,5 +1,5 @@
 # hacktiv8-assignment1
-Assignment 1 from hacktiv8 to create my own portfolio based on their given references.
+Assignment 1 from hacktiv8 to create my own portfolio based on the given example.
 
 The final goals of the project:
 
