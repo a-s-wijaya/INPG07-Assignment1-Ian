@@ -1,3 +1,5 @@
+/* Guide: https://flexbox.help/ */
+
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';
 
 * {
@@ -70,9 +72,8 @@ nav li a:hover:not(.active){
 }
 
 .profile .bio{
-    padding: 0px 20px;
+    padding: 30px 20px;
     margin-left: 20px;
-    margin-right: 150px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -134,6 +135,7 @@ nav li a:hover:not(.active){
 .desc table{
     border-collapse: separate;
     border-spacing: 75px 0;
+    margin-left: 100px;
 }
 
 .desc td{
