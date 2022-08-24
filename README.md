@@ -5,3 +5,5 @@ The final goals of the project:
 
 
 ![image](https://user-images.githubusercontent.com/80952805/185781776-8395f134-fdce-4606-abdf-1a8543bc662a.png)
+
+I'd love to use framework such as materialize, but I'm having a hard time making it similiar with the example, so I use native css instead
