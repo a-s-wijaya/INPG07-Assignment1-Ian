@@ -7,17 +7,17 @@
     padding: 0;
 }
 
-body{
+body {
     background-color: #f7f8fc;
 }
 
-nav{
+nav {
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -27,11 +27,11 @@ nav ul{
     padding: 0 8%;
 }
 
-nav li{
+nav li {
     float: right;
 }
 
-nav li a{
+nav li a {
     display: block;
     color: #000;
     text-align: center;
@@ -39,7 +39,7 @@ nav li a{
     text-decoration: none;
 }
 
-nav li a:hover:not(.active){
+nav li a:hover:not(.active) {
     background-color: blue;
     color: white;
 }
@@ -64,31 +64,31 @@ nav li a:hover:not(.active){
     box-shadow: 2px 4px 10px rgb(162, 162, 162);
 }
 
-.profile img{
+.profile img {
     margin: 50px;
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
 
-.profile .bio{
+.profile .bio {
     padding: 30px 20px;
     margin-left: 20px;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.profile .bio h1{
+.profile .bio h1 {
     font-size: 1.8em;
 }
 
-.profile .bio h3{
+.profile .bio h3 {
     font-size: 1.2em;
     font-weight: 400;
     color: grey;
 }
 
-.contact{
+.contact {
     background-color: blue; 
     margin-top: 20px;
     margin-right: 10px;
@@ -103,14 +103,14 @@ nav li a:hover:not(.active){
     transition-duration: 0.4s;
 }
 
-.contact:hover{
+.contact:hover {
     background-color: white;
     color: blue;
     border: 2px solid blue;
     padding: 13px 30px;
 }
 
-.resume{
+.resume {
     background-color: white; 
     margin-top: 20px;
     margin-right: 10px;
@@ -125,20 +125,20 @@ nav li a:hover:not(.active){
     transition-duration: 0.4s;
 }
 
-.resume:hover{
+.resume:hover {
     background-color: #4CAF50;
     color: white;
     border: none;
     padding: 15px 32px;
 }
 
-.desc table{
+.desc table {
     border-collapse: separate;
     border-spacing: 75px 0;
     margin-left: 100px;
 }
 
-.desc td{
+.desc td {
     padding: 5px;
 }
 
@@ -146,7 +146,7 @@ nav li a:hover:not(.active){
     color: blue;
 }
 
-.form{
+.form {
     background-color: white;
     margin-top: 30px;
     margin-left: 4%;
@@ -157,11 +157,11 @@ nav li a:hover:not(.active){
     padding: 20px;
 }
 
-.form label{
+.form label {
     font-weight: bold;
 }
 
-.form input{
+.form input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -171,7 +171,7 @@ nav li a:hover:not(.active){
     box-sizing: border-box;
 }
 
-.form input[type=submit]{
+.form input[type=submit] {
     background-color: #4CAF50;
     border: none;
     color: white;
