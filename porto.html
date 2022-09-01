@@ -22,32 +22,33 @@
         <div class="profile">
             <img src="img/adrian.jpg" alt="Adrian">
             <div class="bio">
-                <h1>Adrian Sugandi Wijaya</h1>
-                <h3>Front End Developer</h3>
-                <a href="#" class="contact">Edit</a>
-                <a href="#" class="resume">Resume</a>
+                <h1 id="bio-name">Adrian Sugandi Wijaya</h1>
+                <h3 id="bio-role">Front End Developer</h3>
+                <a href="#" class="edit" id="edit" onclick="edit()">Edit</a>
+                <a href="#" class="resume" id="resume">Resume</a>
+                <a href="#" class="reset" id="reset" onclick="resetdata()">Reset</a>
             </div>
             <div class="desc">
                 <table>
                     <tr>
                         <td><span><b>Availability</b></span></td>
-                        <td>Full Time</td>
+                        <td id="bio-ava">Full Time</td>
                     </tr>
                     <tr>
                         <td><span><b>Usia</b></span></td>
-                        <td>19</td>
+                        <td id="bio-age">19</td>
                     </tr>
                     <tr>
                         <td><span><b>Lokasi</b></span></td>
-                        <td>Bekasi, Indonesia</td>
+                        <td id="bio-loc">Bekasi, Indonesia</td>
                     </tr>
                     <tr>
                         <td><span><b>Pengalaman</b></span></td>
-                        <td>2</td>
+                        <td id="bio-exp">2</td>
                     </tr>
                     <tr>
                         <td><span><b>Email</b></span></td>
-                        <td><a href="#" class="email">adrian.s.wijaya@upi.edu</a></td>
+                        <td><a href="#" class="email" id="bio-email">adrian.s.wijaya@upi.edu</a></td>
                     </tr>
                 </table>
             </div>
@@ -55,8 +56,8 @@
     </section>
     
     <section>
-        <div class="form">
-            <form action="#">
+        <div class="form" id="isian">
+            <form name="isibio" action="#" onsubmit="return false;">
                 <label for="name">Nama</label><br>
                 <input type="text" name="nama" id="nama" placeholder="Masukkan nama anda">
                 <br>
@@ -72,15 +73,36 @@
                 <label for="lokasi">Lokasi</label><br>
                 <input type="text" name="lokasi" id="lokasi">
                 <br>
-                <label for="experience">Uears Experience</label><br>
+                <label for="experience">Users Experience</label><br>
                 <input type="text" name="experience" id="experience">
                 <br>
                 <label for="email">Email</label><br>
                 <input type="text" name="email" id="email">
                 <br>
-                <input type="submit" class="submit" value="Submit">
+                <input type="submit" class="submit" value="Submit" onclick="submithandler()">
             </form>
         </div>
     </section>
+
+    <div id="popup">
+        Data telah berhasil diubah
+    </div>
+
+    <script src="script/script.js"></script>
+    <script>
+        loaddata();
+        window.onload = function(){
+            if (localStorage.getItem("hascoderunbefore") === null){
+                name_cur.innerText = 'Adrian Sugandi Wijaya';
+                role_cur.innerText = 'Front End Developer';
+                ava_cur.innerText = 'Full Time';
+                age_cur.innerText = '19';
+                loc_cur.innerText = 'Bekasi, Indonesia';
+                exp_cur.innerText = '2';
+                email_cur.innerText = 'adrian.s.wijaya@upi.edu';
+                localStorage.setItem("hascoderunbefore", "true");
+            }
+        }
+    </script>
 </body>
 </html>
