@@ -181,3 +181,28 @@ nav li a:hover:not(.active) {
     margin-top: 20px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1250px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .desc table {
+        border-collapse: separate;
+        border-spacing: 75px 0;
+        margin: 25px auto;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    nav {
+        position: relative;
+    }
+
+    nav li {
+        float: none;
+
+    }
+}
