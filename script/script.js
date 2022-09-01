@@ -98,13 +98,21 @@ function submithandler(){
 }
 
 function resetdata(){
-    name_cur.innerText = 'Adrian Sugandi Wijaya';
-    role_cur.innerText = 'Front End Developer';
-    ava_cur.innerText = 'Full Time';
-    age_cur.innerText = '19';
-    loc_cur.innerText = 'Bekasi, Indonesia';
-    exp_cur.innerText = '2';
-    email_cur.innerText = 'adrian.s.wijaya@upi.edu';
+    localStorage.setItem('name', 'Adrian Sugandi Wijaya');
+    localStorage.setItem('role', 'Front End Developer');
+    localStorage.setItem('ava', 'Full Time');
+    localStorage.setItem('age', '19');
+    localStorage.setItem('loc', 'Bekasi, Indonesia');
+    localStorage.setItem('exp', '2');
+    localStorage.setItem('email', 'adrian.s.wijaya@upi.edu');
+
+    name_cur.innerText = localStorage.getItem('name');
+    role_cur.innerText = localStorage.getItem('role');
+    ava_cur.innerText = localStorage.getItem('ava');
+    age_cur.innerText = localStorage.getItem('age');
+    loc_cur.innerText = localStorage.getItem('loc');
+    exp_cur.innerText = localStorage.getItem('exp');
+    email_cur.innerText = localStorage.getItem('email');
 }
 
 function loaddata(){
